@@ -1,0 +1,25 @@
+{
+    "name": "gard-connector",
+    "version": "1.0.0",
+    "description": "GARD connector",
+    "main": "component.json",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "elasticio-node": "0.0.8",
+        "elasticio-sailor-nodejs": "^2.2.1",
+        "q": "^1.5.1",
+        "request": "2.76.0",
+        "request-promise": "4.1.1"
+    },
+    "engines": {
+        "node": "^8.4.0",
+        "npm": ">=5.4"
+    },
+    "author": "Endava",
+    "license": "ISC"
+}

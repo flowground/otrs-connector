@@ -1,0 +1,39 @@
+{
+  "title": "GARD",
+  "description": "Connector for handling GARD issues",
+  "credentials": {
+    "fields": {
+        "baseUrl": {
+            "label": "Base URL",
+            "viewClass": "TextFieldView",
+            "required": true
+        },
+        "user": {
+            "label": "Username",
+            "viewClass": "TextFieldView",
+            "required": true
+        },
+        "password": {
+          "label": "Password",
+          "viewClass": "TextFieldView",
+          "required": true
+        }
+    }
+  },
+  "actions": { 
+      "createTicket": {
+          "main": ".lib/actions/createTicket.js",
+          "title": "Create ticket",
+          "fields": {
+              "projects": {
+                "label": "Project names",
+                "required": true,
+                "viewClass": "TextFieldView"
+              }
+          },
+          "metadata": {
+              "in": ".lib/schemas/newTicket.in.json"
+          }
+      }
+  }
+}
