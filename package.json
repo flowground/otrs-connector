@@ -7,7 +7,6 @@
         "lib": "lib"
     },
     "scripts": {
-        "test": "jest"
     },
     "dependencies": {
         "elasticio-node": "0.0.8",
