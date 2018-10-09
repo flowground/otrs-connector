@@ -15,7 +15,7 @@ function verify(credentials) {
 
 	const otrs = new OtrsConnector('https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1', {user , password});
 
-	otrs.getTickets({
+	return otrs.getTickets({
 		"TicketNumber": "0"
 	}).then(
 		() => console.log('success')
