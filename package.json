@@ -1,7 +1,7 @@
 {
-    "name": "gard-connector",
+    "name": "otrs-connector",
     "version": "1.0.0",
-    "description": "GARD connector",
+    "description": "OTRS connector",
     "main": "component.json",
     "directories": {
         "lib": "lib"
