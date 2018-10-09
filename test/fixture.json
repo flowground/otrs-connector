@@ -23,8 +23,6 @@
                         "ContentType":"application/json; charset=utf8"
                     }
                 }
-            },
-            "snapshot": {
             }
         },
         "getTickets": {
@@ -33,25 +31,6 @@
                 "user": "rares.gaia@endava.com",
                 "password": "OtrsUser.12",
                 "projects": "Test"
-            },
-            "msg": {
-                "body": {
-                    "Ticket": {
-                        "Title": "Vlad's test",
-                        "Type": "Unclassified",
-                        "Queue":"Raw",
-                        "State":"open",
-                        "Priority":"3 normal",
-                        "CustomerUser":"rares.gaia@endava.com"
-                    },
-                    "Article": {
-                        "Subject":"Rest Create Test",
-                        "Body":"This is only a test",
-                        "ContentType":"application/json; charset=utf8"
-                    }
-                }
-            },
-            "snapshot": {
             }
         }
     }
