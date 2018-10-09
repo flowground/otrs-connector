@@ -1,51 +1,51 @@
 {
-	"type": "object",
-	"properties": {
-		"Ticket": {
-			"type": "object",
-			"properties": {
-				"Title": {
-					"type": "string",
-					"required": true
-				},
-				"Type": {
-					"type": "string",
-					"required": true
-				},
-				"Queue": {
-					"type": "string",
-					"required": true
-				},
-				"State": {
-					"type": "string",
-					"required": true
-				},
-				"Priority": {
-					"type": "string",
-					"required": true
-				},
-				"CustomerUser": {
-					"type": "string",
-					"required": true
-				}
-			}
-		},
-		"Article": {
-			"type": "object",
-			"properties": {
-				"Subject": {
-					"type": "string",
-					"required": true
-				},
-				"Body": {
-					"type": "string",
-					"required": true
-				},
-				"ContentType": {
-					"type": "string",
-					"required": true
-				}
-			}
-		}
-	}
+    "type": "object",
+    "properties": {
+        "Ticket": {
+            "type": "object",
+            "properties": {
+                "Title": {
+                    "type": "string",
+                    "required": true
+                },
+                "Type": {
+                    "type": "string",
+                    "required": true
+                },
+                "Queue": {
+                    "type": "string",
+                    "required": true
+                },
+                "State": {
+                    "type": "string",
+                    "required": true
+                },
+                "Priority": {
+                    "type": "string",
+                    "required": true
+                },
+                "CustomerUser": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "Article": {
+            "type": "object",
+            "properties": {
+                "Subject": {
+                    "type": "string",
+                    "required": true
+                },
+                "Body": {
+                    "type": "string",
+                    "required": true
+                },
+                "ContentType": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        }
+    }
 }

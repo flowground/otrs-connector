@@ -2,35 +2,35 @@
     "fixtures": {
         "createTicket": {
             "cfg": {
-                "baseUrl":"https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
+                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
                 "user": "rares.gaia@endava.com",
                 "password": "OtrsUser.12",
-                "projects": "Test"
+                "project": "Test"
             },
             "msg": {
                 "body": {
                     "Ticket": {
                         "Title": "Vlad's test",
                         "Type": "Unclassified",
-                        "Queue":"Raw",
-                        "State":"open",
-                        "Priority":"3 normal",
-                        "CustomerUser":"rares.gaia@endava.com"
+                        "Queue": "Raw",
+                        "State": "open",
+                        "Priority": "3 normal",
+                        "CustomerUser": "rares.gaia@endava.com"
                     },
                     "Article": {
-                        "Subject":"Rest Create Test",
-                        "Body":"This is only a test",
-                        "ContentType":"application/json; charset=utf8"
+                        "Subject": "Rest Create Test",
+                        "Body": "This is only a test",
+                        "ContentType": "application/json; charset=utf8"
                     }
                 }
             }
         },
         "getTickets": {
             "cfg": {
-                "baseUrl":"https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
+                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
                 "user": "rares.gaia@endava.com",
                 "password": "OtrsUser.12",
-                "projects": "Test"
+                "project": "Test"
             }
         }
     }
