@@ -1,10 +1,10 @@
 {
-  "title": "GARD",
-  "description": "Connector for handling GARD issues",
+  "title": "OTRS",
+  "description": "Connector for handling OTRS tickets",
   "credentials": {
     "fields": {
         "baseUrl": {
-            "label": "Base URL",
+            "label": "Web Service URL",
             "viewClass": "TextFieldView",
             "required": true
         },
@@ -25,8 +25,8 @@
           "main": ".lib/actions/createTicket.js",
           "title": "Create ticket",
           "fields": {
-              "projects": {
-                "label": "Project names",
+              "project": {
+                "label": "Project name",
                 "required": true,
                 "viewClass": "TextFieldView"
               }
