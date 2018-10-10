@@ -21,7 +21,13 @@
                         "Subject": "Rest Create Test",
                         "Body": "This is only a test",
                         "ContentType": "application/json; charset=utf8"
-                    }
+                    },
+                    "DynamicField": [
+                        {
+                            "Name": "JiraId",
+                            "Value": "1234"
+                        }
+                    ]
                 }
             }
         },

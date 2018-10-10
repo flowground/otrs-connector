@@ -4,17 +4,17 @@
     "credentials": {
         "fields": {
             "baseUrl": {
-                "label": "Web Service URL",
+                "label": "Web Service URL:",
                 "viewClass": "TextFieldView",
                 "required": true
             },
             "user": {
-                "label": "Username",
+                "label": "Username:",
                 "viewClass": "TextFieldView",
                 "required": true
             },
             "password": {
-                "label": "Password",
+                "label": "Password:",
                 "viewClass": "TextFieldView",
                 "required": true
             }
@@ -28,18 +28,16 @@
             "fields": {
                 "projects": {
                     "label": "Project codes:",
-                    "required": "true",
+                    "required": true,
                     "viewClass": "TextFieldView",
-                    "note": "Please enter comma separated project codes",
-                    "model": "*"
+                    "note": "Please enter comma separated project codes"
                 },
                 "startDateTime": {
                     "label": "Issues created since:",
                     "required": true,
                     "viewClass": "TextFieldView",
                     "placeholder": "yyyy-mm-dd hh:mm:ss",
-                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS.",
-                    "model": "*"
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS."
                 }
             },
             "metadata": {
@@ -51,15 +49,8 @@
         "createTicket": {
             "main": "./lib/actions/createTicket.js",
             "title": "Create ticket",
-            "fields": {
-                "project": {
-                    "label": "Project name",
-                    "required": true,
-                    "viewClass": "TextFieldView"
-                }
-            },
             "metadata": {
-                "in": "./lib/schemas/newTicket.in.json"
+                "in": "./lib/schemas/ticket.in.json"
             }
         }
     }
