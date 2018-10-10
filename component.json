@@ -1,39 +1,66 @@
 {
-  "title": "OTRS",
-  "description": "Connector for handling OTRS tickets",
-  "credentials": {
-    "fields": {
-        "baseUrl": {
-            "label": "Web Service URL",
-            "viewClass": "TextFieldView",
-            "required": true
-        },
-        "user": {
-            "label": "Username",
-            "viewClass": "TextFieldView",
-            "required": true
-        },
-        "password": {
-          "label": "Password",
-          "viewClass": "TextFieldView",
-          "required": true
+    "title": "OTRS",
+    "description": "Connector for handling OTRS tickets",
+    "credentials": {
+        "fields": {
+            "baseUrl": {
+                "label": "Web Service URL",
+                "viewClass": "TextFieldView",
+                "required": true
+            },
+            "user": {
+                "label": "Username",
+                "viewClass": "TextFieldView",
+                "required": true
+            },
+            "password": {
+                "label": "Password",
+                "viewClass": "TextFieldView",
+                "required": true
+            }
+        }
+    },
+    "triggers": {
+        "getNewTickets": {
+            "main": ".lib/triggers/getNewTickets.js",
+            "type": "polling",
+            "title": "Get New Tickets",
+            "fields": {
+                "projects": {
+                    "label": "Project codes:",
+                    "required": "true",
+                    "viewClass": "TextFieldView",
+                    "note": "Please enter comma separated project codes",
+                    "model": "*"
+                },
+                "startDateTime": {
+                    "label": "Issues created since:",
+                    "required": true,
+                    "viewClass": "TextFieldView",
+                    "placeholder": "yyyy-mm-dd hh:mm:ss",
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS.",
+                    "model": "*"
+                }
+            },
+            "metadata": {
+                "out": "./lib/schemas/ticket.out.json"
+            }
+        }
+    },
+    "actions": {
+        "createTicket": {
+            "main": "./lib/actions/createTicket.js",
+            "title": "Create ticket",
+            "fields": {
+                "project": {
+                    "label": "Project name",
+                    "required": true,
+                    "viewClass": "TextFieldView"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/newTicket.in.json"
+            }
         }
     }
-  },
-  "actions": { 
-      "createTicket": {
-          "main": "./lib/actions/createTicket.js",
-          "title": "Create ticket",
-          "fields": {
-              "project": {
-                "label": "Project name",
-                "required": true,
-                "viewClass": "TextFieldView"
-              }
-          },
-          "metadata": {
-              "in": "./lib/schemas/newTicket.in.json"
-          }
-      }
-  }
 }
