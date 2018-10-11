@@ -3,9 +3,7 @@
     "properties": {
         "type": "object",
         "properties": {
-            "UntilTime": {
-                "type": "number"
-            },
+            "UntilTime": {"type": "number"},
             "TicketNumber": {"type": "string", "required": true},
             "Created": {"type": "string", "required": true},
             "StateType": {"type": "string", "required": true},
