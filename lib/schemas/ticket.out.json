@@ -6,123 +6,41 @@
             "UntilTime": {
                 "type": "number"
             },
-            "TicketNumber": {
-                "type": "string",
-                "required": true
-            },
-            "Created": {
-                "type": "string",
-                "required": true
-            },
-            "StateType": {
-                "type": "string",
-                "required": true
-            },
-            "Type": {
-                "type": "string",
-                "required": true
-            },
-            "ArchiveFlag": {
-                "type": "string"
-            },
-            "Title": {
-                "type": "string"
-            },
-            "PriorityID": {
-                "type": "number"
-            },
-            "RealTillTimeNotUsed": {
-                "type": "number"
-            },
-            "ServiceID": {
-                "type": "number"
-            },
-            "OwnerID": {
-                "type": "number"
-            },
-            "TypeID": {
-                "type": "number",
-                "required": true
-            },
-            "EscalationTime": {
-                "type": "number"
-            },
-            "ChangeBy": {
-                "type": "number"
-            },
-            "EscalationResponseTime": {
-                "type": "number"
-            },
-            "TimeUnit": {
-                "type": "number"
-            },
-            "TicketID": {
-                "type": "number",
-                "required": true
-            },
-            "UnlockTimeout": {
-                "type": "number"
-            },
-            "StateID": {
-                "type": "number"
-            },
-            "CustomerID": {
-                "type": "string"
-            },
-            "GroupID": {
-                "type": "number"
-            },
-            "Priority": {
-                "type": "string",
-                "required": true
-            },
-            "Queue": {
-                "type": "string",
-                "required": true
-            },
-            "Owner": {
-                "type": "string",
-                "required": true
-            },
-            "Changed": {
-                "type": "string"
-            },
-            "State": {
-                "type": "string",
-                "required": true
-            },
-            "EscalationUpdateTime": {
-                "type": "number"
-            },
-            "CustomerUserID": {
-                "type": "string",
-                "required": true
-            },
-            "CreateBy": {
-                "type": "number"
-            },
-            "QueueID": {
-                "type": "number",
-                "required": true
-            },
-            "SLAID": {
-                "type": "number"
-            },
-            "Responsible": {
-                "type": "string"
-            },
-            "Age": {
-                "type": "number"
-            },
-            "LockID": {
-                "type": "number"
-            },
-            "ResponsibleID": {
-                "type": "number"
-            },
-            "EscalationSolutionTime": {
-                "type": "number"
-            }
+            "TicketNumber": {"type": "string", "required": true},
+            "Created": {"type": "string", "required": true},
+            "StateType": {"type": "string", "required": true},
+            "Type": {"type": "string", "required": true},
+            "ArchiveFlag": {"type": "string"},
+            "Title": {"type": "string"},
+            "PriorityID": {"type": "number"},
+            "RealTillTimeNotUsed": {"type": "number"},
+            "ServiceID": {"type": "number"},
+            "OwnerID": {"type": "number"},
+            "TypeID": {"type": "number", "required": true},
+            "EscalationTime": {"type": "number"},
+            "ChangeBy": {"type": "number"},
+            "EscalationResponseTime": {"type": "number"},
+            "TimeUnit": {"type": "number"},
+            "TicketID": {"type": "number", "required": true},
+            "UnlockTimeout": {"type": "number"},
+            "StateID": {"type": "number"},
+            "CustomerID": {"type": "string"},
+            "GroupID": {"type": "number"},
+            "Priority": {"type": "string", "required": true},
+            "Queue": {"type": "string", "required": true},
+            "Owner": {"type": "string", "required": true},
+            "Changed": {"type": "string"},
+            "State": {"type": "string", "required": true},
+            "EscalationUpdateTime": {"type": "number"},
+            "CustomerUserID": {"type": "string", "required": true},
+            "CreateBy": {"type": "number"},
+            "QueueID": {"type": "number", "required": true},
+            "SLAID": {"type": "number"},
+            "Responsible": {"type": "string"},
+            "Age": {"type": "number"},
+            "LockID": {"type": "number"},
+            "ResponsibleID": {"type": "number"},
+            "EscalationSolutionTime": {"type": "number"}
         }
     }
 }

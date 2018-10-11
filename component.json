@@ -44,7 +44,8 @@
             "main": "./lib/actions/createTicket.js",
             "title": "Create ticket",
             "metadata": {
-                "in": "./lib/schemas/ticket.in.json"
+                "in": "./lib/schemas/ticket.in.json",
+                "out": "./lib/schemas/ticket.out.json"
             }
         }
     }
