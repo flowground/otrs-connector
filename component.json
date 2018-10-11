@@ -26,16 +26,10 @@
             "type": "polling",
             "title": "Get New Tickets",
             "fields": {
-                "projects": {
-                    "label": "Project codes:",
-                    "required": true,
-                    "viewClass": "TextFieldView",
-                    "note": "Please enter comma separated project codes"
-                },
                 "startDateTime": {
                     "label": "Issues created since:",
                     "required": true,
-                    "viewClass": "TextFieldView",
+                    "viewClass": "TextFieldWithNoteView",
                     "placeholder": "yyyy-mm-dd hh:mm:ss",
                     "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS."
                 }
