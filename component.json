@@ -22,7 +22,7 @@
     },
     "triggers": {
         "getNewTickets": {
-            "main": ".lib/triggers/getNewTickets.js",
+            "main": "./lib/triggers/getNewTickets.js",
             "type": "polling",
             "title": "Get New Tickets",
             "fields": {
