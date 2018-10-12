@@ -8,11 +8,10 @@ const OtrsConnector = require('./lib/services/OtrsConnector');
  * @returns Promise
  */
 function verify(credentials) {
-    const {user, password, baseUrl} = credentials;
 
-    const otrs = new OtrsConnector(baseUrl, user, password);
+    const otrs = new OtrsConnector(credentials);
 
-    return otrs.getTickets({
+    return otrs.searchTickets({
         "TicketNumber": "0"
     });
 }
