@@ -39,6 +39,15 @@
                 "project": "Test",
                 "startDateTime": "2018-10-09 00:00:00"
             }
+        },
+        "getUpdatedTickets": {
+            "cfg": {
+                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/w2",
+                "user": "rares.gaia@endava.com",
+                "password": "OtrsUser.12",
+                "project": "Test",
+                "startDateTime": "2018-10-12 13:00:00"
+            }
         }
     }
 }
