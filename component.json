@@ -71,6 +71,14 @@
                 "in": "./lib/schemas/ticket.in.json",
                 "out": "./lib/schemas/ticket.out.json"
             }
+        },
+        "updateTicket": {
+            "mail": "./lib/actions/updateTicket.js",
+            "title": "Update Ticket",
+            "metadata": {
+                "in": "./lib/actions/updateTicket.js",
+                "out": "./lib/schemas/ticket.out.json"
+            }
         }
     }
 }
