@@ -56,6 +56,11 @@
                     "viewClass": "TextFieldWithNoteView",
                     "placeholder": "queue names",
                     "note": "enter the name of the queues you want the tickets to be retrieved from separated by commas without any space ( EX: Raw,Misc,Junk )."
+                },
+                "limit": {
+                    "label": "Max number of tickets to retrieve:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "note": "Default is 500. If there are more tickets than this, they will be retrieved the next time the trigger is run."
                 }
             },
             "metadata": {
