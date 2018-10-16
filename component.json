@@ -27,11 +27,23 @@
             "title": "Get New Tickets",
             "fields": {
                 "startDateTime": {
-                    "label": "Issues created since:",
+                    "label": "Tickets created since:",
                     "required": true,
                     "viewClass": "TextFieldWithNoteView",
                     "placeholder": "yyyy-mm-dd hh:mm:ss",
                     "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS."
+                },
+                "queues": {
+                    "label": "Get tickets from queues:",
+                    "required": true,
+                    "viewClass": "TextFieldWithNoteView",
+                    "placeholder": "queue names",
+                    "note": "Separate queue names with a single comma. Do not enclose in quotes."
+                },
+                "limit": {
+                    "label": "Max number of tickets to retrieve:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
                 }
             },
             "metadata": {
@@ -55,12 +67,12 @@
                     "required": true,
                     "viewClass": "TextFieldWithNoteView",
                     "placeholder": "queue names",
-                    "note": "enter the name of the queues you want the tickets to be retrieved from separated by commas without any space ( EX: Raw,Misc,Junk )."
+                    "note": "Separate queue names with a single comma. Do not enclose in quotes."
                 },
                 "limit": {
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
-                    "note": "Default is 500. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
                 }
             },
             "metadata": {
