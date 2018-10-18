@@ -1,7 +1,7 @@
 {
     "type": "object",
     "properties": {
-        "id": {
+        "TicketID": {
             "type": "string",
             "required": true
         },
@@ -14,7 +14,7 @@
                 "State": {"type": "string"},
                 "Priority": {"type": "string"},
                 "CustomerUser": {"type": "string"},
-                "other": {
+                "OTHER": {
                     "type": "object",
                     "title": "Other ticket fields (keys are field names)"
                 }
@@ -26,7 +26,7 @@
                 "Subject": {"type": "string"},
                 "Body": {"type": "string"},
                 "ContentType": {"type": "string"},
-                "other": {
+                "OTHER": {
                     "type": "object",
                     "title": "Other article fields (keys are field names)"
                 }
@@ -37,16 +37,12 @@
             "title": "Dynamic Field",
             "properties": {
                 "Name": {"type": "string"},
-                "Value": {"type": "string"}
+                "Value": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other dynamic fields (keys are field names))"
+                }
             }
-        },
-        "OtherArticles": {
-            "type": "array",
-            "title": "Other articles (array of objects same format as first article)"
-        },
-        "OtherDynamicFields": {
-            "type": "array",
-            "title": "Other dynamic fields (array of objects same format as first dynamic field)"
         }
     }
 }

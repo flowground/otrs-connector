@@ -30,9 +30,12 @@
                     },
                     "DynamicField": {
                         "Name": "JiraId",
-                        "Value": "1234"
-                    },
-                    "OtherDynamicFields": [{"Name": "UpdateMe", "Value": "updated"}]
+                        "Value": "1234",
+                        "OTHER": {
+                            "UpdateMe": "999",
+                            "Test": 9
+                        }
+                    }
                 }
             }
         },
