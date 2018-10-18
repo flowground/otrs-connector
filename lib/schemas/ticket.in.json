@@ -1,24 +1,60 @@
 {
     "type": "object",
     "properties": {
-        "test": {
-            "type": "string",
-            "title": "Phone",
-            "description": "The phone number"
-        },
-        "members": {
-            "type": "array",
-            "required": true,
-            "items": {
-                "fullName": {
+        "Ticket": {
+            "type": "object",
+            "properties": {
+                "Title": {
                     "type": "string",
                     "required": true
                 },
-                "email": {
+                "Type": {
+                    "type": "string",
+                    "required": true
+                },
+                "Queue": {
+                    "type": "string",
+                    "required": true
+                },
+                "State": {
+                    "type": "string",
+                    "required": true
+                },
+                "Priority": {
+                    "type": "string",
+                    "required": true
+                },
+                "CustomerUser": {
                     "type": "string",
                     "required": true
                 }
             }
-        }
+        },
+        "Article": {
+            "type": "object",
+            "properties": {
+                "Subject": {
+                    "type": "string",
+                    "required": true
+                },
+                "Body": {
+                    "type": "string",
+                    "required": true
+                },
+                "ContentType": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "DynamicField": {
+            "type": "object",
+            "properties": {
+                "Name": {"type": "string"},
+                "Value": {"type": "string"}
+            }
+        },
+        "OtherArticles": {"type": "array"},
+        "OtherDynamicFields": {"type": "array"}
     }
 }
