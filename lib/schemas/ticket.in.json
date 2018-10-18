@@ -5,20 +5,6 @@
             "type": "string",
             "title": "Phone",
             "description": "The phone number",
-        },
-        "members": {
-            "type": "array",
-            "required": true,
-            "properties": {
-                "fullName": {
-                    "type": "string",
-                    "required": true
-                },
-                "email": {
-                    "type": "string",
-                    "required": true
-                }
-            }
         }
     }
 }
