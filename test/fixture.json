@@ -39,6 +39,24 @@
                 }
             }
         },
+        "updateTicket": {
+            "cfg": {
+                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
+                "user": "rares.gaia@endava.com",
+                "password": "OtrsUser.12",
+                "project": "Test"
+            },
+            "msg": {
+                "body": {
+                    "TicketID": "3",
+                    "DynamicField": {
+                        "Name": "JiraId",
+                        "Value": "1234",
+                        "OTHER": {}
+                    }
+                }
+            }
+        },
         "getNewTickets": {
             "cfg": {
                 "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
