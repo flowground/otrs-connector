@@ -2,7 +2,7 @@
     "type": "object",
     "properties": {
         "members": {
-            "type": "array",
+            "type": "object",
             "required": true,
             "properties": {
                 "fullName": {
@@ -10,7 +10,7 @@
                     "required": true
                 },
                 "email": {
-                    "type": "string",
+                    "type": "object",
                     "required": true
                 }
             }
