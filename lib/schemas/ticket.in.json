@@ -9,7 +9,7 @@
         "members": {
             "type": "array",
             "required": true,
-            "items": {
+            "properties": {
                 "fullName": {
                     "type": "string",
                     "required": true
