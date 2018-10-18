@@ -46,7 +46,7 @@
         },
         "OtherDynamicFields": {
             "type": "array",
-            "title": "Other dynamic fileds (array of objects same format as first dynamic field)"
+            "title": "Other dynamic fields (array of objects same format as first dynamic field)"
         }
     }
 }
