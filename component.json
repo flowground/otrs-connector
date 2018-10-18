@@ -90,7 +90,7 @@
             }
         },
         "updateTicket": {
-            "mail": "./lib/actions/updateTicket.js",
+            "main": "./lib/actions/updateTicket.js",
             "title": "Update Ticket",
             "metadata": {
                 "in": "./lib/schemas/updateTicket.in.json",
