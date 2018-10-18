@@ -1,6 +1,11 @@
 {
     "type": "object",
     "items": {
+        "test": {
+            "type": "string",
+            "title": "Phone",
+            "description": "The phone number",
+        },
         "members": {
             "type": "array",
             "required": true,
