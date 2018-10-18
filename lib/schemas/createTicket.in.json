@@ -63,7 +63,7 @@
                 "Value": {"type": "string"},
                 "OTHER": {
                     "type": "object",
-                    "title": "Other dynamic fields (keys are field names))"
+                    "title": "Other dynamic fields (keys are field names)"
                 }
             }
         }
