@@ -93,7 +93,7 @@
             "mail": "./lib/actions/updateTicket.js",
             "title": "Update Ticket",
             "metadata": {
-                "in": "./lib/schemas/ticket.in.json",
+                "in": "./lib/schemas/updateTicket.in.json",
                 "out": "./lib/schemas/ticket.out.json"
             }
         }

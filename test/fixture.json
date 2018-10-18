@@ -15,19 +15,27 @@
                         "Queue": "Raw",
                         "State": "open",
                         "Priority": "3 normal",
-                        "CustomerUser": "rares.gaia@endava.com"
+                        "CustomerUser": "rares.gaia@endava.com",
+                        "other": {
+                            "test": "test"
+                        }
                     },
                     "Article": {
                         "Subject": "Rest Create Test",
                         "Body": "This is only a test",
-                        "ContentType": "application/json; charset=utf8"
-                    },
-                    "DynamicField": [
-                        {
-                            "Name": "JiraId",
-                            "Value": "1234"
+                        "ContentType": "application/json; charset=utf8",
+                        "other": {
+                            "test": "test"
                         }
-                    ]
+                    },
+                    "DynamicField": {
+                        "Name": "JiraId",
+                        "Value": "1234",
+                        "OTHER": {
+                            "UpdateMe": "999",
+                            "Test": 9
+                        }
+                    }
                 }
             }
         },

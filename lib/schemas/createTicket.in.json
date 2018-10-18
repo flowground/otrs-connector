@@ -20,13 +20,17 @@
                     "type": "string",
                     "required": true
                 },
-                "PriorityID": {
+                "Priority": {
                     "type": "string",
                     "required": true
                 },
                 "CustomerUser": {
                     "type": "string",
                     "required": true
+                },
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other ticket fields (keys are field names)"
                 }
             }
         },
@@ -44,6 +48,22 @@
                 "ContentType": {
                     "type": "string",
                     "required": true
+                },
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other article fields (keys are field names)"
+                }
+            }
+        },
+        "DynamicField": {
+            "type": "object",
+            "title": "Dynamic Field",
+            "properties": {
+                "Name": {"type": "string"},
+                "Value": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other dynamic fields (keys are field names)"
                 }
             }
         }

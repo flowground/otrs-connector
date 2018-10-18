@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "TicketID": {
+            "type": "string",
+            "required": true
+        },
+        "Ticket": {
+            "type": "object",
+            "properties": {
+                "Title": {"type": "string"},
+                "Type": {"type": "string"},
+                "Queue": {"type": "string"},
+                "State": {"type": "string"},
+                "Priority": {"type": "string"},
+                "CustomerUser": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other ticket fields (keys are field names)"
+                }
+            }
+        },
+        "Article": {
+            "type": "object",
+            "properties": {
+                "Subject": {"type": "string"},
+                "Body": {"type": "string"},
+                "ContentType": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other article fields (keys are field names)"
+                }
+            }
+        },
+        "DynamicField": {
+            "type": "object",
+            "title": "Dynamic Field",
+            "properties": {
+                "Name": {"type": "string"},
+                "Value": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other dynamic fields (keys are field names)"
+                }
+            }
+        }
+    }
+}
