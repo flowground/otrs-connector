@@ -4,12 +4,12 @@
         "test": {
             "type": "string",
             "title": "Phone",
-            "description": "The phone number",
+            "description": "The phone number"
         },
         "members": {
             "type": "array",
             "required": true,
-            "properties": {
+            "items": {
                 "fullName": {
                     "type": "string",
                     "required": true
