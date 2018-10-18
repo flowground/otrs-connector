@@ -1,8 +1,8 @@
 {
     "type": "object",
-    "properties": {
+    "items": {
         "members": {
-            "type": "object",
+            "type": "array",
             "required": true,
             "properties": {
                 "fullName": {
@@ -10,7 +10,7 @@
                     "required": true
                 },
                 "email": {
-                    "type": "array",
+                    "type": "string",
                     "required": true
                 }
             }
