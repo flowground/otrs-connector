@@ -10,7 +10,7 @@
                     "required": true
                 },
                 "email": {
-                    "type": "object",
+                    "type": "array",
                     "required": true
                 }
             }
