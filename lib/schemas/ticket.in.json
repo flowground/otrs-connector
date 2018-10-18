@@ -1,10 +1,24 @@
 {
     "type": "object",
-    "items": {
+    "properties": {
         "test": {
             "type": "string",
             "title": "Phone",
             "description": "The phone number",
+        },
+        "members": {
+            "type": "array",
+            "required": true,
+            "items": {
+                "fullName": {
+                    "type": "string",
+                    "required": true
+                },
+                "email": {
+                    "type": "string",
+                    "required": true
+                }
+            }
         }
     }
 }
