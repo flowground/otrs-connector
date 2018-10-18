@@ -34,12 +34,19 @@
         },
         "DynamicField": {
             "type": "object",
+            "title": "Dynamic Field",
             "properties": {
                 "Name": {"type": "string"},
                 "Value": {"type": "string"}
             }
         },
-        "OtherArticles": {"type": "array"},
-        "OtherDynamicFields": {"type": "array"}
+        "OtherArticles": {
+            "type": "array",
+            "title": "Other articles (array of objects same format as first article)"
+        },
+        "OtherDynamicFields": {
+            "type": "array",
+            "title": "Other dynamic fileds (array of objects same format as first dynamic field)"
+        }
     }
 }

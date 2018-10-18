@@ -57,6 +57,7 @@
         },
         "DynamicField": {
             "type": "object",
+            "title": "Dynamic Field",
             "properties": {
                 "Name": {"type": "string"},
                 "Value": {"type": "string"}
