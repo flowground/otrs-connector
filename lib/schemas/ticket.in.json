@@ -27,6 +27,10 @@
                 "CustomerUser": {
                     "type": "string",
                     "required": true
+                },
+                "other": {
+                    "type": "object",
+                    "title": "Other ticket fields (keys are field names)"
                 }
             }
         },
@@ -44,6 +48,10 @@
                 "ContentType": {
                     "type": "string",
                     "required": true
+                },
+                "other": {
+                    "type": "object",
+                    "title": "Other article fields (keys are field names)"
                 }
             }
         },
