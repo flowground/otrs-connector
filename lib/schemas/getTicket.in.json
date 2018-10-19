@@ -1,7 +1,7 @@
 {
     "type": "object",
     "properties": {
-        "ticketId": {
+        "TicketID": {
             "type": "string",
             "required": true,
             "title": "Ticket ID"
