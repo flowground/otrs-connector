@@ -90,10 +90,18 @@
             }
         },
         "updateTicket": {
-            "mail": "./lib/actions/updateTicket.js",
+            "main": "./lib/actions/updateTicket.js",
             "title": "Update Ticket",
             "metadata": {
                 "in": "./lib/schemas/updateTicket.in.json",
+                "out": "./lib/schemas/ticket.out.json"
+            }
+        },
+        "getTicket": {
+            "main": "./lib/actions/getTicket.js",
+            "title": "Get Ticket",
+            "metadata": {
+                "in": "./lib/schemas/getTicket.in.json",
                 "out": "./lib/schemas/ticket.out.json"
             }
         }
