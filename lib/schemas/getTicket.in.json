@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "TicketID": {
+            "type": "string",
+            "required": true,
+            "title": "Ticket ID"
+        }
+    }
+}
