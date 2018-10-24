@@ -31,7 +31,7 @@
                     "required": true,
                     "viewClass": "TextFieldWithNoteView",
                     "placeholder": "yyyy-mm-dd hh:mm:ss",
-                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS."
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the UTC timezone."
                 },
                 "queues": {
                     "label": "Get tickets from queues:",
@@ -69,7 +69,7 @@
                     "required": true,
                     "viewClass": "TextFieldWithNoteView",
                     "placeholder": "yyyy-mm-dd hh:mm:ss",
-                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the same timezone as the one configured in OTRS."
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the UTC timezone."
                 },
                 "queues": {
                     "label": "Get tickets from queues:",
