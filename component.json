@@ -44,6 +44,15 @@
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
                     "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                },
+                "includeArticles": {
+                    "label": "Include articles:",
+                    "viewClass": "SelectView",
+                    "model": {
+                        "none": "None",
+                        "first": "First",
+                        "all": "All"
+                    }
                 }
             },
             "metadata": {
@@ -73,6 +82,15 @@
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
                     "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                },
+                "includeArticles": {
+                    "label": "Include articles:",
+                    "viewClass": "SelectView",
+                    "model": {
+                        "none": "None",
+                        "first": "First",
+                        "all": "All"
+                    }
                 }
             },
             "metadata": {
