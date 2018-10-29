@@ -63,7 +63,7 @@
                 "user": "rares.gaia@endava.com",
                 "password": "OtrsUser.12",
                 "project": "Test",
-                "queues": "MSP",
+                "queues": "TestMinMax",
                 "startDateTime": "2018-10-23 00:00:00",
                 "includeArticles": "all",
                 "includeAttachments": true
