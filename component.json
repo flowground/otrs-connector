@@ -53,6 +53,10 @@
                         "first": "First",
                         "all": "All"
                     }
+                },
+                "includeAttachments": {
+                    "label": "Include attachments from articles:",
+                    "viewClass": "CheckBoxView"
                 }
             },
             "metadata": {
@@ -91,6 +95,10 @@
                         "first": "First",
                         "all": "All"
                     }
+                },
+                "includeAttachments": {
+                    "label": "Include attachments from articles:",
+                    "viewClass": "CheckBoxView"
                 }
             },
             "metadata": {
