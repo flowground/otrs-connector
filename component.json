@@ -55,8 +55,9 @@
                     }
                 },
                 "includeAttachments": {
-                    "label": "Include attachments from articles:",
-                    "viewClass": "CheckBoxView"
+                    "label": "Include attachments:",
+                    "viewClass": "CheckBoxView",
+                    "require": ["includeArticles"]
                 }
             },
             "metadata": {
@@ -97,8 +98,9 @@
                     }
                 },
                 "includeAttachments": {
-                    "label": "Include attachments from articles:",
-                    "viewClass": "CheckBoxView"
+                    "label": "Include attachments:",
+                    "viewClass": "CheckBoxView",
+                    "require": ["includeArticles"]
                 }
             },
             "metadata": {
