@@ -1,18 +1,13 @@
 {
     "type": "object",
     "properties": {
-        "Article": {
+        "TicketID": {"type": "string", "required": true},
+        "Subject": {"type": "string", "required": true},
+        "Body": {"type": "string", "required": true},
+        "ContentType": {"type": "string", "required": true},
+        "OTHER": {
             "type": "object",
-            "properties": {
-                "TicketID": {"type": "string", "required": true},
-                "Subject": {"type": "string", "required": true},
-                "Body": {"type": "string", "required": true},
-                "ContentType": {"type": "string", "required": true},
-                "OTHER": {
-                    "type": "object",
-                    "title": "Other article fields (keys are field names)"
-                }
-            }
+            "title": "Other article fields (keys are field names)"
         }
     }
 }
