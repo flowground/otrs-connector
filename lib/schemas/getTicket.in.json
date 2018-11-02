@@ -1,10 +1,14 @@
 {
     "type": "object",
     "properties": {
-        "TicketID": {
+        "ticketId": {
             "type": "string",
             "required": true,
             "title": "Ticket ID"
+        },
+        "articlesCreatedAfter": {
+            "type": "string",
+            "title": "Include only articles newer than (yyyy-mm-dd hh:mm:ss in UTC)"
         }
     }
 }

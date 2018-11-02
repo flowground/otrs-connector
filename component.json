@@ -48,6 +48,7 @@
                 "includeArticles": {
                     "label": "Include articles:",
                     "viewClass": "SelectView",
+                    "required": true,
                     "model": {
                         "none": "None",
                         "first": "First",
@@ -55,7 +56,7 @@
                     }
                 },
                 "includeAttachments": {
-                    "label": "Include attachments:",
+                    "label": "Include attachments",
                     "viewClass": "CheckBoxView",
                     "require": ["includeArticles"]
                 }
@@ -91,6 +92,7 @@
                 "includeArticles": {
                     "label": "Include articles:",
                     "viewClass": "SelectView",
+                    "required": true,
                     "model": {
                         "none": "None",
                         "first": "First",
@@ -98,7 +100,7 @@
                     }
                 },
                 "includeAttachments": {
-                    "label": "Include attachments:",
+                    "label": "Include attachments",
                     "viewClass": "CheckBoxView",
                     "require": ["includeArticles"]
                 }
@@ -131,6 +133,27 @@
             "metadata": {
                 "in": "./lib/schemas/getTicket.in.json",
                 "out": "./lib/schemas/ticket.out.json"
+            },
+            "fields": {
+                "includeArticles": {
+                    "label": "Include articles:",
+                    "viewClass": "SelectView",
+                    "required": true,
+                    "model": {
+                        "none": "None",
+                        "first": "First only",
+                        "rest": "All but the first",
+                        "all": "All"
+                    }
+                },
+                "includeAttachments": {
+                    "label": "Include attachments",
+                    "viewClass": "CheckBoxView"
+                },
+                "includeDynamicFields": {
+                    "label": "Include dynamic fields",
+                    "viewClass": "CheckBoxView"
+                }
             }
         }
     }
