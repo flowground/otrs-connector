@@ -132,6 +132,14 @@
                 "in": "./lib/schemas/getTicket.in.json",
                 "out": "./lib/schemas/ticket.out.json"
             }
+        },
+        "addArticle": {
+            "main": "./lib/actions/addArticle.js",
+            "title": "Add Article",
+            "metadata": {
+                "in": "./lib/schemas/addArticle.in.json",
+                "out": {}
+            }
         }
     }
 }

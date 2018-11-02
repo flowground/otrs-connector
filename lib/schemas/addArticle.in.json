@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "TicketID": {"type": "string", "required": true},
+        "Article": {
+            "type": "object",
+            "properties": {
+                "Subject": {"type": "string"},
+                "Body": {"type": "string"},
+                "ContentType": {"type": "string"},
+                "OTHER": {
+                    "type": "object",
+                    "title": "Other article fields (keys are field names)"
+                }
+            }
+        }
+    }
+}
