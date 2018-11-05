@@ -93,6 +93,7 @@
                     "label": "Include articles:",
                     "viewClass": "SelectView",
                     "required": true,
+                    "prompt": "None",
                     "model": {
                         "none": "None",
                         "first": "First",
@@ -139,6 +140,7 @@
                     "label": "Include articles:",
                     "viewClass": "SelectView",
                     "required": true,
+                    "prompt": "None",
                     "model": {
                         "none": "None",
                         "first": "First only",
