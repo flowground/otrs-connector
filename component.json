@@ -163,6 +163,15 @@
                 "in": "./lib/schemas/addArticle.in.json",
                 "out": {}
             }
+        },
+        "forEach": {
+            "main": "./lib/actions/forEach.js",
+            "title": "For Each Item in List",
+            "description": "Emits a message for each item in a list",
+            "metadata": {
+                "in": "./lib/schemas/forEach.in.json",
+                "out": {}
+            }
         }
     }
 }
