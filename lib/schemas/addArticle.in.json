@@ -5,6 +5,14 @@
         "Subject": {"type": "string", "required": true},
         "Body": {"type": "string", "required": true},
         "ContentType": {"type": "string", "required": true},
+        "IsVisibleForCustomer": {
+            "type": "number",
+            "title": "Visible for Customer (0=no, 1=yes)"
+        },
+        "Attachment": {
+            "type": "array",
+            "description": "Can be an object or an array of objects with the following required fields: ContentType, Filename, Content. Content must be a platform url."
+        },
         "OTHER": {
             "type": "object",
             "title": "Other article fields (keys are field names)"
