@@ -172,6 +172,14 @@
                 "in": "./lib/schemas/forEach.in.json",
                 "out": {}
             }
+        },
+        "processAttachments": {
+            "main": "./lib/actions/processAttachments.js",
+            "title": "Process Attachments",
+            "metadata": {
+                "in": "./lib/schemas/processAttachments.in.json",
+                "out": "./lib/schemas/ticket.out.json"
+            }
         }
     }
 }
