@@ -17,6 +17,11 @@
                 "label": "Password:",
                 "viewClass": "TextFieldView",
                 "required": true
+            },
+            "caCertificates": {
+                "label": "CA Certificate(s):",
+                "viewClass": "TextAreaView",
+                "note": "Please enter one or more CA certificates in PEM format."
             }
         }
     },

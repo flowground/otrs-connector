@@ -13,5 +13,8 @@ function verify(credentials) {
 
     return otrs.searchTickets({
         "TicketNumber": "0"
+    }).catch(err => {
+        console.log('Verify Credentials error:', JSON.stringify(err));
+        return Promise.reject(err);
     });
 }
