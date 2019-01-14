@@ -1,6 +1,7 @@
+![OTRS logo](logo.png "OTRS logo") 
+
 # OTRS connector
 
-![OTRS logo](logo.png "OTRS logo") 
 OTRS connector for the [Mittelstands plattform](https://app.msp-live.external.otc.telekomcloud.com/ "MittelStands platform")
 
 > OTRS is a service management suite that comprises ticketing, workflow automation and notification, 
@@ -23,7 +24,9 @@ by completing the following steps:
 2. On your admin tab under "Processes and Automation" select "Web Services"
 ![Web service button position](readme/images/web-service.PNG "Web service button position") 
 3. On the Web Services Management page select Add Web Service, located on the left of the page
+
 ![Add web service](readme/images/add-web-service.PNG "Add web service")
+
 4. Give the web service a name "General → Name"
 ![Name web service](readme/images/web-service-name.PNG "Name web service") 
 5. On the add new web service page under "OTRS as provider → Settings → Network transport" select
