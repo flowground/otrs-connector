@@ -81,7 +81,7 @@ Upon completing the web service setup it's time to configure the OTRS connector
 _Most actions contain a input field called "OTHER" which will allow a user to add any other field to the input by creating a object. In this object the field is the object key and the value is the field value_
   
 ### triggers:
-* getNewTickets → Get all new OTRS tickets which can filtered by the date they were created, the queue they are in. The user can also select on weather the ticket will include all, none or first article and also if it will include the attachments. The output will be an object that contains the ticket and a property called meta which will contain the date that was stored inside of the snapshot
+* getNewTickets → Get all new OTRS tickets which can filtered by the date they were created, the queue they are in. The user can also select on whether the ticket will include all, none or first article and also if it will include the attachments. The output will be an object that contains the ticket and a property called meta which will contain the date that was stored inside of the snapshot
 * getUpdateTickets → Functions the same as the getNewTickets trigger but instead of newly created tickets, it retrieves the tickets that have been recently updated
 
-_**For more information about the triggers and actions usage check the file index.html in readme-usage folder**_
+_**For more information about the triggers and actions usage check the extended [documentation](doc/index.html)**_
