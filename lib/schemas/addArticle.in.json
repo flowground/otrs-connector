@@ -4,7 +4,11 @@
         "TicketID": {"type": "string", "required": true},
         "Subject": {"type": "string", "required": true},
         "Body": {"type": "string", "required": true},
-        "ContentType": {"type": "string", "required": true},
+        "ContentType": {
+            "type": "string",
+            "required": true,
+            "title": "Content Type"
+        },
         "IsVisibleForCustomer": {
             "type": "number",
             "title": "Visible for Customer (0=no, 1=yes)"
@@ -15,7 +19,7 @@
         },
         "OTHER": {
             "type": "object",
-            "title": "Other article fields (keys are field names)"
+            "title": "Other Article Fields (keys are field names)"
         }
     }
 }
