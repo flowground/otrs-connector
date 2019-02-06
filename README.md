@@ -42,9 +42,10 @@ HTTP::REST
     4. Ticket::TicketUpdate
 9. Once selecting any of these operations you must name the operation, we recommend naming them: ticket-create, ticket-get, ticket-search and ticket-update; after naming them click "Save" and then "Save and finish"
 ![Operation configure](readme/images/operation.PNG "Operation configure")
-10. After creating all the operations go to "OTRS as provider → Operations → Configure" located on the right of the previously used "Network Transport"
+10. After creating all the operations go to "OTRS as provider → Settings → Configure" located on the right of the previously used "Network Transport"
 ![Configure](readme/images/configure.PNG "Configure") 
 11. Create Route mapping and set the valid request methods for each operation as follows:
+
     Operation | Route | Request Method
     --------- | ----- | --------------
     ticket-create | /Ticket | POST
@@ -52,7 +53,8 @@ HTTP::REST
     ticket-search | /Tickets | POST
     ticket-update | /Tickets/:TicketID | PATCH
 ![Configure api endpoints](readme/images/endpoints.PNG "Configure api endpoints") 
-12. On the same page configure "Maximum message length", give it a large number, minimum would be 1000
+
+12. On the same page configure "Maximum message length", give it a large number, for example 10000 for 10KB, larger if you expect attachments
 13. "Save and finish" the configuration
 14. "Save and finish" the webservice
 
