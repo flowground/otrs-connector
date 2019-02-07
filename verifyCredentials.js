@@ -12,9 +12,9 @@ function verify(credentials) {
     const otrs = new OtrsConnector(credentials);
 
     return otrs.searchTickets({
-        "TicketNumber": "0"
+        'TicketNumber': '0'
     }).catch(err => {
-        console.log('Verify Credentials error:', JSON.stringify(err));
+        console.log('Verify Credentials error: %j', err);
         return Promise.reject(err);
     });
 }
