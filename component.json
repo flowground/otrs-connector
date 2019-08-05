@@ -26,7 +26,7 @@
         }
     },
     "triggers": {
-        "getNewTickets": {
+        "getNewTicketsTrigger": {
             "main": "./lib/triggers/getNewTickets.js",
             "type": "polling",
             "title": "Get New Tickets",
@@ -69,7 +69,7 @@
                 "out": "./lib/schemas/ticket.out.json"
             }
         },
-        "getUpdatedTickets": {
+        "getUpdatedTicketsTrigger": {
             "main": "./lib/triggers/getUpdatedTickets.js",
             "type": "polling",
             "title": "Get Updated Tickets",
@@ -114,6 +114,90 @@
         }
     },
     "actions": {
+        "getNewTickets": {
+            "main": "./lib/triggers/getNewTickets.js",
+            "title": "Get New Tickets",
+            "fields": {
+                "startDateTime": {
+                    "label": "Tickets created since:",
+                    "required": true,
+                    "viewClass": "TextFieldWithNoteView",
+                    "placeholder": "yyyy-mm-dd hh:mm:ss",
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the UTC timezone."
+                },
+                "queues": {
+                    "label": "Get tickets from queues:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "placeholder": "queue names",
+                    "note": "Separate queue names with a single comma. Do not enclose in quotes."
+                },
+                "limit": {
+                    "label": "Max number of tickets to retrieve:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                },
+                "includeArticles": {
+                    "label": "Include articles:",
+                    "viewClass": "SelectView",
+                    "required": true,
+                    "model": {
+                        "none": "None",
+                        "first": "First",
+                        "all": "All"
+                    }
+                },
+                "includeAttachments": {
+                    "label": "Include attachments",
+                    "viewClass": "CheckBoxView",
+                    "require": ["includeArticles"]
+                }
+            },
+            "metadata": {
+                "out": "./lib/schemas/ticket.out.json"
+            }
+        },
+        "getUpdatedTickets": {
+            "main": "./lib/triggers/getUpdatedTickets.js",
+            "title": "Get Updated Tickets",
+            "fields": {
+                "startDateTime": {
+                    "label": "Tickets updated since:",
+                    "required": true,
+                    "viewClass": "TextFieldWithNoteView",
+                    "placeholder": "yyyy-mm-dd hh:mm:ss",
+                    "note": "Please use <code><b>yyyy-mm-dd hh:mm:ss</b></code> format and use the UTC timezone."
+                },
+                "queues": {
+                    "label": "Get tickets from queues:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "placeholder": "queue names",
+                    "note": "Separate queue names with a single comma. Do not enclose in quotes."
+                },
+                "limit": {
+                    "label": "Max number of tickets to retrieve:",
+                    "viewClass": "TextFieldWithNoteView",
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                },
+                "includeArticles": {
+                    "label": "Include articles:",
+                    "viewClass": "SelectView",
+                    "required": true,
+                    "model": {
+                        "none": "None",
+                        "first": "First",
+                        "all": "All"
+                    }
+                },
+                "includeAttachments": {
+                    "label": "Include attachments",
+                    "viewClass": "CheckBoxView",
+                    "require": ["includeArticles"]
+                }
+            },
+            "metadata": {
+                "out": "./lib/schemas/ticket.out.json"
+            }
+        },
         "createTicket": {
             "main": "./lib/actions/createTicket.js",
             "title": "Create ticket",
