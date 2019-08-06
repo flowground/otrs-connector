@@ -27,7 +27,7 @@
     },
     "triggers": {
         "getNewTicketsTrigger": {
-            "main": "./lib/triggers/getNewTickets.js",
+            "main": "./lib/actions/getNewTickets.js",
             "type": "polling",
             "title": "Get New Tickets",
             "fields": {
@@ -47,7 +47,7 @@
                 "limit": {
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
-                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved in the next flow execution."
                 },
                 "includeArticles": {
                     "label": "Include articles:",
@@ -70,7 +70,7 @@
             }
         },
         "getUpdatedTicketsTrigger": {
-            "main": "./lib/triggers/getUpdatedTickets.js",
+            "main": "./lib/actions/getUpdatedTickets.js",
             "type": "polling",
             "title": "Get Updated Tickets",
             "fields": {
@@ -90,7 +90,7 @@
                 "limit": {
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
-                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved in the next flow execution."
                 },
                 "includeArticles": {
                     "label": "Include articles:",
@@ -115,7 +115,7 @@
     },
     "actions": {
         "getNewTickets": {
-            "main": "./lib/triggers/getNewTickets.js",
+            "main": "./lib/actions/getNewTickets.js",
             "title": "Get New Tickets",
             "fields": {
                 "startDateTime": {
@@ -134,7 +134,7 @@
                 "limit": {
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
-                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved in the next flow execution."
                 },
                 "includeArticles": {
                     "label": "Include articles:",
@@ -157,7 +157,7 @@
             }
         },
         "getUpdatedTickets": {
-            "main": "./lib/triggers/getUpdatedTickets.js",
+            "main": "./lib/actions/getUpdatedTickets.js",
             "title": "Get Updated Tickets",
             "fields": {
                 "startDateTime": {
@@ -176,7 +176,7 @@
                 "limit": {
                     "label": "Max number of tickets to retrieve:",
                     "viewClass": "TextFieldWithNoteView",
-                    "note": "Default is 50. If there are more tickets than this, they will be retrieved the next time the trigger is run."
+                    "note": "Default is 50. If there are more tickets than this, they will be retrieved in the next flow execution."
                 },
                 "includeArticles": {
                     "label": "Include articles:",
