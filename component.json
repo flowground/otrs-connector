@@ -22,6 +22,10 @@
                 "label": "CA Certificate(s):",
                 "viewClass": "TextAreaView",
                 "note": "Please enter one or more CA certificates in PEM format."
+            },
+            "dontRejectUnauthorized": {
+                "label": "Do not verify server's certificate (unsafe)",
+                "viewClass": "CheckBoxView"
             }
         }
     },
