@@ -1,6 +1,7 @@
 {
     "title": "OTRS",
     "description": "Connector for handling OTRS tickets",
+    "buildType": "docker",
     "credentials": {
         "fields": {
             "baseUrl": {
