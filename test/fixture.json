@@ -2,38 +2,38 @@
     "fixtures": {
         "createTicket": {
             "cfg": {
-                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
-                "user": "rares.gaia@endava.com",
-                "password": "OtrsUser.12",
-                "project": "Test"
+                "baseUrl": "{{baseUrl}}",
+                "user": "{{user}}",
+                "password": "{{password}}",
+                "project": "{{project}}"
             },
             "msg": {
                 "body": {
                     "Ticket": {
-                        "Title": "Vlad's test",
-                        "Type": "Unclassified",
-                        "Queue": "Raw",
-                        "State": "open",
-                        "Priority": "3 normal",
-                        "CustomerUser": "rares.gaia@endava.com",
+                        "Title": "{{title}}",
+                        "Type": "{{type}}",
+                        "Queue": "{{queues}}",
+                        "State": "{{state}}",
+                        "Priority": "{{priority}}",
+                        "CustomerUser": "{{customer}}",
                         "other": {
-                            "test": "test"
+                            "test": "{{other_test}}"
                         }
                     },
                     "Article": {
-                        "Subject": "Rest Create Test",
-                        "Body": "This is only a test",
-                        "ContentType": "application/json; charset=utf8",
+                        "Subject": "{{subject}}",
+                        "Body": "{{body}}",
+                        "ContentType": "{{content_type}}",
                         "other": {
-                            "test": "test"
+                            "test": "{{other_test}}"
                         }
                     },
                     "DynamicField": {
-                        "Name": "JiraId",
-                        "Value": "1234",
+                        "Name": "{{dynamic_field_name}}",
+                        "Value": "{{dynamic_field_value}}",
                         "OTHER": {
-                            "UpdateMe": "999",
-                            "Test": 9
+                            "UpdateMe": "{{other_update}}",
+                            "Test": "{{other_test_number}}"
                         }
                     }
                 }
@@ -41,17 +41,17 @@
         },
         "updateTicket": {
             "cfg": {
-                "baseUrl": "https://rrsg.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/ws1",
-                "user": "rares.gaia@endava.com",
-                "password": "OtrsUser.12",
-                "project": "Test"
+                "baseUrl": "{{baseUrl}}",
+                "user": "{{user}}",
+                "password": "{{password}}",
+                "project": "{{project}}"
             },
             "msg": {
                 "body": {
-                    "TicketID": "3",
+                    "TicketID": "{{ticket_id}}",
                     "DynamicField": {
-                        "Name": "JiraId",
-                        "Value": "1234",
+                        "Name": "{{dynamic_field_name}}",
+                        "Value": "{{dynamic_field_value}}",
                         "OTHER": {}
                     }
                 }
@@ -59,26 +59,26 @@
         },
         "getNewTickets": {
             "cfg": {
-                "baseUrl": "https://endava.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/rest",
-                "user": "ciprian.serbu@endava.com",
-                "password": "ERXd6XWWjjs11TMSAMf0bivtWPijWoKB",
-                "project": "Test",
-                "queues": "MSP",
-                "startDateTime": "2018-10-23 00:00:00",
-                "includeArticles": "all",
-                "includeAttachments": true
+                "baseUrl": "{{baseUrl}}",
+                "user": "{{user}}",
+                "password": "{{password}}",
+                "project": "{{project}}",
+                "queues": "{{queues}}",
+                "startDateTime": "{{start_date}}",
+                "includeArticles": "{{include_articles}}",
+                "includeAttachments": "{{include_attachments}}"
             }
         },
         "getUpdatedTickets": {
             "cfg": {
-                "baseUrl": "https://endava.managed-otrs.com/otrs/nph-genericinterface.pl/Webservice/rest",
-                "user": "ciprian.serbu@endava.com",
-                "password": "ERXd6XWWjjs11TMSAMf0bivtWPijWoKB",
-                "project": "Test",
-                "startDateTime": "2018-10-23 15:40:00",
-                "queues": "MSP",
-                "includeArticles": "all",
-                "includeAttachments": true
+                "baseUrl": "{{baseUrl}}",
+                "user": "{{user}}",
+                "password": "{{password}}",
+                "project": "{{project}}",
+                "startDateTime": "{{start_date}}",
+                "queues": "{{queues}}",
+                "includeArticles": "{{include_articles}}",
+                "includeAttachments": "{{include_attachments}}"
             }
         }
     }
