@@ -11,7 +11,7 @@
         "elasticio-node": "0.0.8",
         "elasticio-sailor-nodejs": "^2.2.1",
         "jest": "^23.6.0",
-        "lodash": "^4.17.13",
+        "lodash": "^4.17.19",
         "moment": "^2.22.2",
         "q": "^1.5.1",
         "request": "2.76.0",
